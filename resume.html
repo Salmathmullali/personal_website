@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <title>Salmath M- Resume</title>
+        <title>Salmath M- Bio</title>
 
         <meta charset="utf-8">
         <meta name="description" content="">
@@ -24,6 +24,48 @@
         <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
    </head>
+   <style>
+  .project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .project-image-wrapper {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-info {
+    padding: 10px 15px;
+    transition: transform 0.3s ease;
+  }
+
+  .project-extra {
+    transform: translateY(100%);
+    background: #f8f9fa;
+    padding: 10px 15px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .project-card:hover .project-extra {
+    transform: translateY(0%);
+  }
+</style>
    <body>
    
    <!-- Start wrapper -->
@@ -71,11 +113,11 @@
                        <a href="about.html">About</a>
                     </li>
                     <li>
-                       <a href="resume.html">Resume</a>
+                       <a href="resume.html">Bio</a>
                     </li>
                     
                     <li class="active">
-                      <a  href="collection.html">Conclusion</a>
+                      <a  href="collection.html">Contact</a>
                     </li>
                     
                 </ul>
@@ -86,74 +128,111 @@
 
 
          <!-- Start resume -->
+
+         <div class="container">
+  <h2 class="mb-4">Education</h2>
+  <ul class="list-group mb-5">
+    <li class="list-group-item">
+      <strong>Bachelor of Computer Application (BCA)</strong><br>
+      IGNOU - Graduated in June 2024
+    </li>
+    <li class="list-group-item">
+      <strong>Computer Operator and Programming Assistant</strong><br>
+      ITI Kannur, Kerala - Graduated in 2020
+    </li>
+  </ul>
+  </div><br><br>
+  <br>
+<div class="container mt-5">
+  <h2 class="mb-4 text-center">Education Platforms</h2>
+  <div class="container text-center mt-5">
+  <div class="d-flex justify-content-center flex-wrap gap-3">
+        <a href="https://github.com/Salmathmullali" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-gray?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+      </a>
+        <a href="https://www.w3profile.com/celmulla/" target="_blank">
+        <img src="https://img.shields.io/badge/W3Schools-gray?style=for-the-badge&logo=w3schools&logoColor=white" alt="W3Schools" />
+      </a>
+        <a href="https://www.hackerrank.com/profile/salmathmullali" target="_blank">
+        <img src="https://img.shields.io/badge/HackerRank-gray?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank" />
+      </a>
+        <a href="https://leetcode.com/u/Salmath-M/" target="_blank">
+        <img src="https://img.shields.io/badge/LeetCode-gray?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode" />
+      </a>
+    </div>
+</div>
+</div>
+
+<br><br>
          
 	
 	              <!--WORK DESCRIPTION -->
-	              <div class="container desc">
-		             <div class="row">
-				        <div class="col-lg-2 col-lg-offset-1">
-					    <h4> Project Work</h4>
-				        </div>
-				        <div class="col-lg-6">
-					      <p><span class="e-heading">Kids Unique World</span><br/>
-						 Python-django  <br/>
-					     </p>
-					     <p><span class="more">Individual Project. User of this application is kids. 
-                            The main attraction of this application is Lock 
-                            technology to reduce the system Usage.</span></p>
-				        </div>
-				        <div class="col-lg-3">
-					     <p><span class="date">dec - 2023/ University Project</span></p>
-				        </div>
-				        <div class="col-lg-6 col-lg-offset-3">
-					     <p><span class="e-heading">Real time messaging and chat web application</span><br/>
-						 Python-Django/REST API<br/>
-					     </p>
-					     <p><span class="more">This application provides articles and books. 
-                            The community feature allows users to become 
-                            members, chat, and share information with each 
-                            other. .</span></p>
-				       </div>
-				       <div class="col-lg-3">
-					    <p><span class="date">Nov - 2024/</span></p>
-				       </div>
-                       <div class="col-lg-6 col-lg-offset-3">
-					     <p><span class="e-heading">Customer Relationship Management app</span><br/>
-						 Python-django<br/>
-					     </p>
-					     <p><span class="more">Track customer interaction and automate 
-                            certain business function of sales cycle. .</span></p>
-				       </div>
-				       <div class="col-lg-3">
-					    <p><span class="date">Dec -  2024/</span></p>
-				       </div>
-                       
-		           </div><!-- /row -->
-		           <br>
-		          <div class="line-symbol"></div>
-	              </div><!-- /container -->
+	             <h2 class="mb-4">Projects</h2>
+               <br><br><br>
+ <div class="container">
+  <div class="row">
 
+    <!-- Card 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card text-center project-card">
+        <div class="project-image-wrapper">
+          <img src="img/Screenshot 2025-07-22 112801.png" alt="Chat App">
+        </div>
+        <div class="card-body project-info">
+          <h5 class="card-title">LIFE - Chat app</h5>
+          <p class="card-text">Real-time chat using Django + REST.</p>
+        </div>
+        <div class="project-extra">
+          <p>Community chat rooms with live messaging and login authentication features. Built fully using WebSockets, Django, and Bootstrap.</p>
+          <a href="https://github.com/Salmathmullali/Lifes---find-your-study-partner" target="_blank" class="btn btn-sm btn-outline-primary mb-2">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card text-center project-card">
+        <div class="project-image-wrapper">
+          <img src="img/Screenshot 2025-07-22 115313.png" alt="Project 2">
+        </div>
+        <div class="card-body project-info">
+          <h5 class="card-title">Kids Unique World</h5>
+          <p class="card-text">Kids Socila Media usage controling app using Django + MySQL.</p>
+        </div>
+        <div class="project-extra">
+          <p>instead of search videos and books through several apps without safety,this kid’s unique world application provides all the necessary videos and books with extra security and lock protection</p>
+          <a href="https://github.com/Salmathmullali/kids_unique_world" target="_blank" class="btn btn-sm btn-outline-primary mb-2">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card text-center project-card">
+        <div class="project-image-wrapper">
+          <img src="img/Screenshot 2025-07-22 115340.png" alt="Project 3">
+        </div>
+        <div class="card-body project-info">
+          <h5 class="card-title">Take Care</h5>
+          <p class="card-text">Collaborating Project for medical field using Django.</p>
+        </div>
+        <div class="project-extra">
+          <p>Symptom-based health insights, skin condition detection, and doctor/hospital search.Lab test suggestions, appointment booking, and mental health support.Health-related e-commerce and donation services..</p>
+          <a href="https://github.com/Salmathmullali/Take-Care" target="_blank" class="btn btn-sm btn-outline-primary mb-2">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <br><br><br><br>
                   
                   
 	              <!-- AWARDS DESCRIPTION -->
 
                   <!-- 🌐 Stylish Profile Links Section -->
-<div class="container text-center mt-5">
-    <h4 class="text-uppercase fw-bold mb-4">Connect With Me</h4>
-    <div class="d-flex justify-content-center flex-wrap gap-3">
-        <a href="https://github.com/Salmathmullali" target="_blank">
-            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-        </a>
-        <a href="https://www.linkedin.com/in/salmath-mullali-098ba42a8" target="_blank">
-            <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-        </a>
-        <a href="https://www.w3schools.com" target="_blank">
-            <img src="https://img.shields.io/badge/W3Schools-25AB63?style=for-the-badge&logo=w3schools&logoColor=white" alt="W3Schools" />
-        </a>
-        <a href="https://www.hackerrank.com" target="_blank">
-            <img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank" />
-        </a>
-    </div>
+
 </div>
 
 	              <!--  -->
@@ -191,3 +270,4 @@
 
 </body>
 </html>
+
