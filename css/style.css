@@ -5,10 +5,7 @@
 
 
 body {
-	background-color: white;
-	background-image: url(../img/bg.jpg);
-	background-position: left top;
-	background-repeat: repeat;
+	background-color: #ffffff;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -26,12 +23,10 @@ a:hover {
 
 
 .wrapper {
-  background: white;
-  margin: 70px auto;
-  width: 90%;
-  max-width: 1250px;
-  overflow: hidden;
-  border: 6px solid #eaeaea;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -820,6 +815,13 @@ figure.effect-moses:hover img {
     font-family: 'Qwigley', Helvetica, Sans-serif;	   
 }
 
+.edu-platforms-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+}
+
 
 
 /* ----------------------------------------------------
@@ -1154,6 +1156,12 @@ h6 {
 
 .nav>li>a {
     padding: 14px;
+}
+
+.edu-platforms-links {
+	flex-wrap: wrap;
+	gap: 12px;
+	padding: 0 15px;
 }
 
 }
