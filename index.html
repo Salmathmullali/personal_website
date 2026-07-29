@@ -1,178 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>Salmath M</title>
+<head>
+    <title>Salmath M - Portfolio</title>
 
-        <meta charset="utf-8">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Boostrap Core CSS-->
-        <link rel="stylesheet" href="css/bootstrap.min.css"> 
-        
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="css/style.css">
-        
-        <!-- Animate CSS -->
-        <link href="css/animate.css" rel="stylesheet">
-        
-        <!-- Google fonts -->
-        <!-- <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'> -->
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Qwigley" /> 
-        <!-- Font awesome -->
-        <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta name="description" content="Portfolio of Salmath M - Software Developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Animate CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet" type="text/css">
+    
+    <!-- Font Awesome -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-   </head>
-   <body>
-   
+    <style>
+        /* Badge links layout styling */
+        .edu-platforms-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+
+        /* Center navbar items cleanly */
+        .navbar-nav.navbar-center {
+            display: inline-block;
+            float: none;
+        }
+
+        .navbar-collapse.text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
     <!-- Start main-container -->
-    <div class="main-container">
-  	  <div class="col-md-12">
-         <!-- Logo -->
-         <div class="brand wow fadeIn" data-wow-delay="0.1s"> Salmath Mullali
-           <div class="title"> - Software Developer -  </div>
-         </div>
-
-         <!-- Navigation -->
-         <nav class="navbar navbar-default" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <div class="navbar-brand"><a href="#">Salmath Mullali</a>
-                <div class="title">- Software Developer -</div>
+    <div class="main-container container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                
+                <!-- Logo / Title -->
+                <div class="brand wow fadeIn" data-wow-delay="0.1s" style="margin: 20px 0;">
+                    Salmath Mullali
+                    <div class="title">- Software Developer -</div>
                 </div>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                   <li class="dropdown">
-                        <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a> -->
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                            <!-- <li>
-                                <a href="index-work.html">Home2</a>
-                            </li> -->
+
+                <!-- Navigation Bar -->
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-brand visible-xs">
+                            <a href="index.html">Salmath Mullali</a>
+                            <div class="title">- Software Developer -</div>
+                        </div>
+                    </div>
+
+                    <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-center">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="resume.html">Bio</a></li>
+                            <li><a href="collection.html">Contact</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="index.html">Home</a>
-                     </li>
-                    <li>
-                       <a href="about.html">About</a>
-                    </li>
-                    <li>
-                       <a href="resume.html">Bio</a>
-                    </li>
-                    
-                    <li>
-                        <a href="collection.html">Contact</a>
-                      </li>
-                    
-                </ul>
-            </div>
-            <!-- /navbar-collapse -->
-         </nav>
-         <!-- End nav -->
+                    </div>
+                </nav>
 
-         <!-- Start main image and the text below -->
-         <!-- <div class="col-md-12 wow fadeIn" data-wow-delay="0.1s">
-              <img src="img/mainpics.png" alt="img" class="resp main-image"/>
-                  <h1>Hat design</h1>
-                  <div class="hr"></div>
-                  <h2>The human head is a constantly moving and turning pedestal...with the hat a sculpture.
-                  </h2>
-                  <div class="text-center">
-                     <a href="collection.html" class="home-btn btn">View collection</a>
-                  </div>  
-          </div> -->
-          <div class="col-md-12 wow fadeIn" data-wow-delay="0.1s">
-            <img src="img/homepic.png" alt="img" class="resp main-image" />
-            <h1>My Page</h1>
-
-<div class="text-center my-4" style="margin-top: 10px;">
-  <div class="edu-platforms-links">
-    <a href="https://github.com/Salmathmullali" target="_blank">
-      <img src="https://img.shields.io/badge/GitHub-gray?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" style="height: 25px;" />
-    </a>
-    <a href="https://www.linkedin.com/in/salmath-mullali-098ba42a8" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-gray?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" style="height: 25px;" />
-    </a>
-    <a href="https://www.pinterest.com/celmulla" target="_blank">
-      <img src="https://img.shields.io/badge/Pinterest-gray?style=for-the-badge&logo=pinterest&logoColor=white" alt="Pinterest" style="height: 25px;" />
-    </a>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=salmathmullali@email.com" target="_blank">
-      <img src="https://img.shields.io/badge/Email-gray?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" style="height: 25px;" />
-    </a>
-  </div>
-</div>
-
-            <div class="hr"></div>
-            <h2>"Hello, everyone! Welcome to my portfolio. Take a look around to learn more about me and my work!"</h2>
-            <div class="text-center">
-                <a href="resume.html" class="home-btn btn">View My Bio and links</a>
             </div>
         </div>
-        
-          <!-- End main image and the text below -->
 
-          <!-- Start left column -->
-          <div class="box-home col-md-4 col-xs-offset-1">
-               <h3>
-               <span class="text-left"></span> "Dream big, work hard, and turn your visions into reality. Every masterpiece begins with a dream."  
-               <a href="about.html">read more <i class="fa fa-angle-right"></i></a>
-               </h3>
-          </div>
-          <!-- End left column -->
-             
-          <!-- Start right image -->
-          <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
-             <!-- <div class="first">
-             <div class="square wow fadeInDown" data-wow-delay=".5s"></div>
-             </div> -->
-             <img src="img/mainimgs.png" alt="img" class="photo-home"/> 
-          </div>
-          <!-- End right image -->
+        <!-- Main Image and Banner Section -->
+        <div class="row text-center">
+            <div class="col-md-12 wow fadeIn" data-wow-delay="0.1s">
+                <img src="img/homepic.png" alt="Salmath Mullali Portfolio Banner" class="resp main-image img-responsive center-block" />
+                <h1>My Page</h1>
 
-          <!-- Start footer -->
-          <!-- <div class="footer col-md-6 col-xs-offset-3">
-             <h5>Copyright 2016
-                 <a href="#"><i class="fa fa-facebook fa-1x icon1"></i></a>
-                 <a href="#"><i class="fa fa-twitter fa-1x icon1"></i></a>
-                 <a href="#"><i class="fa fa-instagram fa-1x icon1"></i></a>
-             </h5>
-          </div> -->
-          <!-- End footer -->
-          
-      </div>
-      <!-- End col-md-12 -->
+                <!-- Social & Platform Badges -->
+                <div class="edu-platforms-links">
+                    <a href="https://github.com/Salmathmullali" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.shields.io/badge/GitHub-gray?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" style="height: 25px;" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/salmath-mullali-098ba42a8" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.shields.io/badge/LinkedIn-gray?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" style="height: 25px;" />
+                    </a>
+                    <a href="https://www.pinterest.com/celmulla" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.shields.io/badge/Pinterest-gray?style=for-the-badge&logo=pinterest&logoColor=white" alt="Pinterest" style="height: 25px;" />
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=salmathmullali@email.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.shields.io/badge/Email-gray?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" style="height: 25px;" />
+                    </a>
+                </div>
+
+                <div class="hr" style="margin: 20px auto; width: 60px; height: 2px; background-color: #ccc;"></div>
+                
+                <h2>"Hello, everyone! Welcome to my portfolio. Take a look around to learn more about me and my work!"</h2>
+                
+                <div class="text-center" style="margin: 20px 0;">
+                    <a href="resume.html" class="home-btn btn">View My Bio and Links</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Grid Section (Quote + Image) -->
+        <div class="row" style="margin-top: 40px; margin-bottom: 40px;">
+            <!-- Left Column: Motivational Quote -->
+            <div class="col-md-5 col-sm-6">
+                <div class="box-home">
+                    <h3>
+                        "Dream big, work hard, and turn your visions into reality. Every masterpiece begins with a dream." 
+                        <br><br>
+                        <a href="about.html">read more <i class="fa fa-angle-right"></i></a>
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Right Column: Secondary Image -->
+            <div class="col-md-7 col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                <img src="img/mainimgs.png" alt="Featured Work Preview" class="photo-home img-responsive" /> 
+            </div>
+        </div>
 
     </div>
     <!-- End main-container -->
 
-      
-   <!-- jQuery Version 1.11.0 -->
-   <script src="js/jquery-1.11.0.js"></script>
-   <!-- Boostrap JS -->
-   <script src="js/bootstrap.min.js"></script>
-   <!-- Smooth scroll JS -->
-   <script src="js/smoothscroll.js"></script>
-   
-   <!-- Wow JavaScript -->
-   <script src="js/wow.js"></script>
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Smooth Scroll JS -->
+    <script src="js/smoothscroll.js"></script>
+    <!-- WOW JS -->
+    <script src="js/wow.js"></script>
     
-   <script>
-   new WOW().init();
-   </script>
-
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 </html>
