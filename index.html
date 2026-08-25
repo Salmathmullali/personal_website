@@ -25,21 +25,50 @@
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <style>
-        /* Centering fixes for mobile viewports */
-        .brand {
-            text-align: center !important;
-            margin: 15px auto !important;
-        }
-
+        /* Navbar header & centering fixes */
         .navbar-header {
             float: none !important;
             text-align: center !important;
+            padding: 10px 0;
         }
 
         .navbar-toggle {
             float: none !important;
-            margin: 10px auto !important;
+            margin: 5px auto 15px auto !important;
             display: inline-block !important;
+        }
+
+        /* Custom Brand styling for high visibility on mobile & desktop */
+        .navbar-brand-custom {
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .brand-name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none !important;
+            display: block;
+        }
+
+        .brand-name:hover {
+            color: #555;
+        }
+
+        .brand-title {
+            font-size: 14px;
+            color: #666;
+            letter-spacing: 1px;
+            margin-top: 3px;
+        }
+
+        .brand-subtitle {
+            font-style: italic;
+            font-size: 13px;
+            margin-top: 5px;
+            color: #777;
         }
 
         /* Badge links layout styling */
@@ -61,6 +90,15 @@
         .navbar-collapse.text-center {
             text-align: center;
         }
+
+        @media (max-width: 767px) {
+            .brand-name {
+                font-size: 22px;
+            }
+            .brand-title {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 
@@ -71,18 +109,28 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 
-                <!-- 1. Navigation Bar placed at the top -->
+                <!-- 1. Navigation Bar -->
                 <nav class="navbar navbar-default" role="navigation" style="margin-bottom: 10px;">
                     <div class="navbar-header">
-                        <!-- Mobile Toggle (3-line icon) centered above name -->
+                        <!-- Mobile Toggle (3-line icon) -->
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
+
+                        <!-- Brand / Name & Title visible across all views including Mobile -->
+                        <div class="navbar-brand-custom wow fadeIn" data-wow-delay="0.1s">
+                            <a href="index.html" class="brand-name">Salmath Mullali</a>
+                            <div class="brand-title">- Creative Technologist & IT Specialist -</div>
+                            <p class="brand-subtitle">
+                                "Turning imagination into reality through technology and design"
+                            </p>
+                        </div>
                     </div>
 
+                    <!-- Collapsible Menu -->
                     <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-center">
                             <li class="active"><a href="index.html">Home</a></li>
@@ -92,15 +140,6 @@
                         </ul>
                     </div>
                 </nav>
-
-                <!-- 2. Logo / Title directly below navigation -->
-                <div class="brand wow fadeIn" data-wow-delay="0.1s">
-    Salmath Mullali
-    <div class="title">- Creative Technologist & IT Specialist -</div>
-    <p style="font-style: italic; font-size: 14px; margin-top: 5px; color: #777;">
-        "Turning imagination into reality through technology and design"
-    </p>
-</div>
 
             </div>
         </div>
