@@ -28,6 +28,31 @@
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <style>
+        /* Center navbar items cleanly when expanded on desktop */
+        .navbar-nav.navbar-center {
+            display: inline-block;
+            float: none;
+        }
+
+        .navbar-collapse.text-center {
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-collapse {
+                text-align: center;
+            }
+            .navbar-nav.navbar-center {
+                display: block;
+                float: none;
+                margin: 0 auto;
+            }
+            .navbar-nav > li {
+                float: none;
+                display: block;
+            }
+        }
+
         .popup-overlay {
             position: fixed;
             top: 0;
@@ -106,8 +131,8 @@
                         </button>
                     </div>
 
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-center" style="display: inline-block; float: none;">
+                    <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-center">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="resume.html">Bio</a></li>
